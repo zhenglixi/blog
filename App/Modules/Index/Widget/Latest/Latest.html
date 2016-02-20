@@ -1,0 +1,9 @@
+<dl>
+	<dt>最新布发</dt>
+	<foreach name='latest' item='v'>
+		<dd>
+			<a href="{:U('/' . $v['id'])}" target='_blank'>{$v.title}</a>
+			<span>{$v.click}</span>
+		</dd>
+	</foreach>
+</dl>
